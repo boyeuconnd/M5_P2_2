@@ -1,0 +1,10 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter font size (px):</label>
+  <input type="number" [value]="fontSize" (change)="onChange($event.target.value)">
+</div>
+
+<p class="output" [style.fontSize.px]="fontSize">
+   Đoạn văn này demo component fontsize editor using Agular. nhập font size vào ô bên trên để thấy sự thay đổi.
+</p>
